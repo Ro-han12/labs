@@ -1,4 +1,4 @@
-XML code:
+
 Activity main.xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -61,6 +61,7 @@ android:ems="10"
 android:hint="Password"
 android:inputType="textPassword" />
 </RelativeLayout>
+
 Activity login.xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -122,6 +123,7 @@ android:ems="10"
 android:hint="Email ID"
 android:inputType="textPersonName" />
 </RelativeLayout>
+
 Activity.loginsuccess.xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -144,7 +146,6 @@ android:text="Login Successful"
 android:textSize="36sp"
 android:textStyle="bold" />
 </RelativeLayout>
-
 
 Java code:
 Main activity .java
@@ -202,7 +203,6 @@ if(!upperCase.matcher(password).matches()) {
 return false;
 }
 if(!number.matcher(password).matches()) {
-School of CSE
 return false;
 }
 if(!special_Chara.matcher(password).matches()) {
@@ -211,6 +211,7 @@ return false;
 return true;
 }
 }
+
 loginactivity.java
 package com.example.program3;
 import androidx.appcompat.app.AppCompatActivity;
@@ -260,6 +261,7 @@ login_btn.setEnabled(false);
 
 }
 }
+
 Loginsuccessactivity.java
 package com.example.program3;
 import androidx.appcompat.app.AppCompatActivity;
